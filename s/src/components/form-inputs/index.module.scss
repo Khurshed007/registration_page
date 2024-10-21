@@ -1,0 +1,82 @@
+@import "../../vars.scss";
+
+
+input {
+  padding: 16px 32px;
+  border-radius: $radius-small;
+  width: 100%;
+  border: 1px solid $light-bg;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  background-color: transparent;
+  outline: none;
+  color: $light-cl;
+  &::placeholder {
+    color: $light-cl;
+  }
+}
+
+.input_wrapper:not(:last-child) {
+  margin-bottom: 10px;
+}
+.input_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  input {
+    width: 100%;
+  }
+}
+.message {
+  color: var(--primary-cl);
+  margin-left: 4px;
+  font-size: 16px;
+  line-height: 20.6px;
+
+  &.active{
+    color:$light-cl;
+  }
+}
+// .message.active{
+//   color:$light-cl;
+// }
+
+button {
+  padding: 16px 20px;
+  background-color: #fff;
+  border: none;
+  border-radius: $radius-small;
+  font-size: 20px;
+  line-height: 26px;
+  cursor: pointer;
+
+  &:hover{
+    color: $light-cl;
+    background-color: $dark-cl;
+  }
+}
+
+.error_content{
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+%icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+
+.icon {
+  @extend %icon;
+  width: 20px;
+  height: 20px;
+  fill: #CB0505;
+  path {
+    stroke: #FFFFFF;
+  }
+
+}

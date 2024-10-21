@@ -1,0 +1,53 @@
+@import "../../vars.scss";
+
+
+.title {
+
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+    color: var(--primary-cl);
+    @media screen and (max-width: 780px) {
+      margin-top: 32px;
+    }
+  
+}
+
+.text {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 70.4px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .text {
+    font-size: 56px;
+    line-height: 61.6px;
+    letter-spacing: -1px;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .text {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52.8px;
+  }
+ 
+}
+
+@media screen and (max-width: 479px) {
+  .btn_item {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .text {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+}

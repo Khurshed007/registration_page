@@ -1,0 +1,197 @@
+@import "../../vars.scss";
+.formSection{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form__title{
+  color: $dark-cl;
+}
+
+.forgottPassword{
+  display: block;
+  width: 100%;
+  text-align: right;
+  margin-top: 20px;
+  color: #0088cc;
+  text-decoration: none;
+}
+
+.form {
+  // Green background
+  flex: 1;
+  border-radius: 10px;
+  display: flex;
+  text-align: center;
+  // color: white;
+  padding: 32px 10px 32px 10px;
+  margin-top: 24px;
+  & .full_width {
+    padding: 0;
+  }
+  @media screen and (max-width: 1000px) {
+    padding: 0 20px 32px 0;
+  }
+
+  .btnContainer{
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 1000px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+
+  // input {
+  //   // background-color: aqua;
+  //       padding: 16px 32px;
+  //   border-radius: $radius-small;
+  //   width: 100%;
+  //   border: 1px solid $dark-cl;
+  //   font-weight: 500;
+  //   font-size: 20px;
+  //   line-height: 20px;
+  //   // color: $dark-cl;
+  //   // background-color: rgba(255, 240, 255, 0.24);
+  //   outline: none;
+  //    color: $dark-cl;
+  //   &::placeholder {
+  //     color: $dark-cl;
+  //   }
+  // }
+
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+
+  .input_wrapper:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .input_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .message {
+    // color: darkblue;
+    margin-top: 5px;
+  }
+
+  & .form__button {
+    // padding: 10px 25px;
+    flex: 1;
+    margin: 10px;
+    color: $dark-cl;
+    border: none;
+    border-radius: $radius-big;
+    font-size: 16px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 400;
+    color: $light-cl;
+    background-color: transparent;
+    color:#0088cc;
+    border: 1px solid #0088cc;
+    height: 40px;
+    
+    &:hover{
+       background-color: #0088cc;
+       color: #fff;
+      //  border: none;
+    }
+
+    &.btn_active{
+      background-color:#0088cc;
+      color:$light-cl;
+      border: 1px solid #0088cc;
+    
+      &:hover{
+        color:$blue-cl;
+        background-color: $light-bg;
+        //  border: none;
+      }
+    
+    }
+    
+  }
+}
+.form_container {
+  position: relative;
+
+
+  width: 650px;
+  text-align: center;
+  // background-color: red;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: $radius-big;
+  padding: 32px 0 0 0;
+  margin-top: 80px;
+  @media screen and (max-width: 1000px) {
+    padding: 32px 0 0 0;
+    margin-top: 60px;
+  }
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 24px 0 0 0;
+    margin-top: 56px;
+  }
+  h1 {
+    color: $dark-cl;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 70.4px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 30px;
+    }
+    @media screen and (max-width: 480px) {
+      font-size: 28px;
+   
+    }
+ 
+  }
+}
+.form_content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 10px;
+}
+.img_block {
+  width: 60%;
+
+  .img_block__img {
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    width: 100%;
+  }
+}
