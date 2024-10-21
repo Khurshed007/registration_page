@@ -67,7 +67,7 @@ export const DiscountInput = ({
         rules={{
           required: "Please enter your password",
           pattern: {
-            value: PHONE_REGEX,
+            // value: PHONE_REGEX,
             message: "Password must meet specific criteria",
           },
         }}
@@ -109,7 +109,7 @@ export const DiscountInput = ({
         rules={{
           required: "Please enter your password",
           pattern: {
-            value: PHONE_REGEX,
+            // value: PHONE_REGEX,
             message: "Password must meet specific criteria",
           },
         }}
